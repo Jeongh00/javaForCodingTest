@@ -38,7 +38,7 @@ public class personalInfo {
         return answer;
     }
 
-    public int[] solution(String today, String[] terms, String[] privacies) {
+    public int[] answer(String today, String[] terms, String[] privacies) {
         HashMap<String,Integer> map = new HashMap<>();
         ArrayList<Integer> answer = new ArrayList<>();
 

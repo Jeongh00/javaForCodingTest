@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 public class personalInfoAnswer {
-    public int[] solution(String today, String[] terms, String[] privacies) {
+    public int[] answer(String today, String[] terms, String[] privacies) {
         List<Integer> answer = new ArrayList<>();
         Map<String, Integer> termMap = new HashMap<>();
         int date = getDate(today);
