@@ -1,20 +1,18 @@
 package lecture;
 
-import com.sun.tools.javac.Main;
-
 import java.util.Scanner;
 
 public class compareScores {
 
-    public int[] solution(int n, int [] arr) {
+    public int[] solution(int n, int[] arr) {
 
-        int [] answer = new int[n];
+        int[] answer = new int[n];
 
-        for(int i=0; i<n; i++) {
+        for (int i = 0; i < n; i++) {
 
             int cnt = 1;
-            for(int j=0; j<n; j++){
-                if(arr[j] > arr[i]) cnt++;
+            for (int j = 0; j < n; j++) {
+                if (arr[j] > arr[i]) cnt++;
             }
             answer[i] = cnt;
 
@@ -28,11 +26,11 @@ public class compareScores {
         compareScores T = new compareScores();
         Scanner kb = new Scanner(System.in);
         int n = kb.nextInt();
-        int [] arr = new int[n];
-        for(int i=0; i<n; i++) {
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
             arr[i] = kb.nextInt();
         }
-        for(int x: T.solution(n, arr)) System.out.print(x + "");
+        for (int x : T.solution(n, arr)) System.out.print(x + "");
     }
 
 }
