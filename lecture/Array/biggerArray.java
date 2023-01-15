@@ -1,4 +1,4 @@
-package lecture;
+package lecture.Array;
 
 import java.util.ArrayList;
 import java.util.Scanner;

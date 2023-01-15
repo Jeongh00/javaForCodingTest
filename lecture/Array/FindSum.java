@@ -1,4 +1,4 @@
-package lecture;
+package lecture.Array;
 
 public class FindSum {
     public int solution(int n, int m, int [] arr) {
