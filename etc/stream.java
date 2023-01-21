@@ -29,6 +29,7 @@ public class stream {
                 .collect(Collectors.toList());
 
         List<CoupangStampVoV2> stamps = coupangStampService.getStamps(mbrId, orderId);
+
         int stampCount = stamps.size();
         int canceledCount = (int) stamps.stream()
                 .filter(stamp -> Status.F == stamp.getStatus())
@@ -93,7 +94,9 @@ public class stream {
             .sorted((a, b) -> {
         int dateCmp = a.get(0).getOrderedAt().compareTo(b.get(0).getOrderedAt());
         if (dateCmp != 0) {
+
             return dateCmp;
+
         }
 
         Integer aPrice = a.get(0).getPrice();
